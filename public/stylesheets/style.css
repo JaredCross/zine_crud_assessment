@@ -1,8 +1,77 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/images/congruent_outline.png");
 }
 
 a {
   color: #00B7FF;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.header {
+  background-image: url("/images/header_background.jpeg");
+  height: 180px;
+  overflow: hidden;
+  margin-top: 0px;
+  top: 0;
+  position: absolute;
+  width: 90.5%;
+}
+
+.header h1 {
+  float: right;
+  margin-top: 60px;
+  margin-right: 5%;
+  display: inline-block;
+  font-size: 45px;
+}
+
+.sub-header {
+  border-bottom: 1px solid lightgray;
+  height: 25px;
+}
+
+.content {
+  background-color: white;
+  padding: 4px 10px 10px 10px;
+  margin-top : 13%;
+}
+
+.form-container div {
+  margin-top: 2%;
+}
+
+.form-container label {
+  display: inline-block;
+  width: 13%;
+  vertical-align: top;
+}
+
+.form-container input {
+  width: 60%;
+}
+
+.form-container input[type='checkbox'] {
+  width: auto;
+  margin-left: 13%;
+}
+
+.form-container .checkbox-label {
+  display: inline-block;
+  width: 25%;
+  margin-left: 1%;
+}
+
+.form-container input[type='submit'] {
+  width: auto;
+  margin-left: 13%;
+}
+
+.form-container textarea {
+  height: 100px;
+  width: 60%;
 }

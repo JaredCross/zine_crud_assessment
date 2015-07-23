@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+  div.header
+    h1 The Zine
+  div.content
+    div.sub-header
+      h2 New Article
+    div.form-container
+      form(action='/articles' method='post')
+        include ../includes/form.jade
+        div
+          input(type="submit" value='Add Article')
