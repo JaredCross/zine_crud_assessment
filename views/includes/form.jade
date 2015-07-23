@@ -1,15 +1,31 @@
 div
   label(for='title') Title
-  input(type="text" id='title' name='title')
+  input(type="text" id='title' name='title' value=(article)? '#{article.title}' : '')
 div
   label(for='background') Background URL
-  input(type="text" id='background' name='background')
-div
-  input(type="checkbox" name='dark' id='dark')
-  label(for='dark' class='checkbox-label') Background image has dark colors
-div
-  label(for='excerpt') Excerpt
-  textarea(id='excerpt' name='excerpt')
-div
-  label(for='body') Body
-  textarea(id='body' name='body')
+  input(type="text" id='background' name='background' value=(article)? '#{article.backgroundImg}' : '')
+if(article)
+  if (article.isDark==='on')
+    div
+      input(type="checkbox" name='dark' id='dark' checked)
+      label(for='dark' class='checkbox-label') Background image has dark colors
+  else
+    div
+      input(type="checkbox" name='dark' id='dark')
+      label(for='dark' class='checkbox-label') Background image has dark colors
+  div
+    label(for='excerpt') Excerpt
+    textarea(id='excerpt' name='excerpt') #{article.excerpt}
+  div
+    label(for='body') Body
+    textarea(id='body' name='body') #{article.body}
+else
+  div
+    input(type="checkbox" name='dark' id='dark')
+    label(for='dark' class='checkbox-label') Background image has dark colors
+    div
+      label(for='excerpt') Excerpt
+      textarea(id='excerpt' name='excerpt')
+    div
+      label(for='body') Body
+      textarea(id='body' name='body')

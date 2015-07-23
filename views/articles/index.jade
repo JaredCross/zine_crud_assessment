@@ -1,0 +1,25 @@
+extends ../layout
+
+block content
+  div.header
+    include ../includes/title.jade
+  div.content
+    if (data)
+      each article in data
+        div.article
+          if (article.isDark)
+            div.title(style='background-image: url('+((article.backgroundImg)? "#{article.backgroundImg}":"images/swirl_pattern.png")+'); color: white;')
+              h3
+                a(href='/articles/' + article._id) #{article.title}
+            div.excerpt
+              p= article.excerpt
+          else
+            div.title(style='background-image: url('+((article.backgroundImg)? "#{article.backgroundImg}":"images/swirl_pattern.png")+'); color: black;')
+              h3
+                a(href='/articles/' + article._id) #{article.title}
+            div.excerpt
+              p= article.excerpt
+  div.new-article
+    a(href='/articles/new') Add New Article!
+          
+  

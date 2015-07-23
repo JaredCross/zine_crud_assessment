@@ -35,11 +35,12 @@ h2 {
   height: 25px;
 }
 
-.content {
-  background-color: white;
+.new-content {
   padding: 4px 10px 10px 10px;
   margin-top : 13%;
+  background-color: white;
 }
+
 
 .form-container div {
   margin-top: 2%;
@@ -74,4 +75,66 @@ h2 {
 .form-container textarea {
   height: 100px;
   width: 60%;
+}
+
+.content {
+  margin-top: 13%;
+}
+
+.article {
+  margin-bottom: 12%;
+  clear: both;
+  position: relative;
+
+}
+
+.title {
+  height: 50px;
+  padding-left: 10px;
+  padding-top: 5px;
+  width: 98%;
+}
+
+
+h3 a:link, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.excerpt {
+  background-color: #FFFAFA;
+  float: left;
+  width: 98%;
+  height: 100px;
+  padding-left: 10px;
+}
+
+h1 a:link, h1 a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+h3 {
+  float: left;
+}
+h3.edit-link {
+  float: right;
+  margin-right: 10px;
+}
+
+.delete-container input {
+  margin-left: 13%;
+  margin-top: 2%;
+  background-color: red;
+
+}
+
+ul {
+  margin-left: 10%;
+  color: red;
+}
+
+.new-article a:link, .new-article a:visited {
+  color: blue;
 }

@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+  div.header
+    include ../includes/title.jade
+  div.new-content
+    div.sub-header
+      h2 Edit Article
+    div.form-container
+      form(action='/articles/' + article._id method='post')
+        include ../includes/form.jade
+        div
+          input(type="submit" value='Update Article')
+    div.delete-container
+      form(action='/articles/' + article._id +'/delete' method='post')
+        input(type='submit' value='Delete')
+    include ../includes/errors.jade
