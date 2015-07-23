@@ -135,6 +135,10 @@ ul {
   color: red;
 }
 
+ul li {
+  margin-left: 2%;
+}
+
 .new-article a:link, .new-article a:visited {
   color: blue;
 }

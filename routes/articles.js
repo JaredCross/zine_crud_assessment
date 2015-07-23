@@ -9,6 +9,7 @@ var title = 'The Zine';
 
 router.get('/articles', function (req, res, next) {
   articles.find({}, function (err, data) {
+    data = data.reverse();
     res.render('articles/index', {title : title, data : data});
   });
 });
