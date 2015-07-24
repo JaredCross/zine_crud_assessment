@@ -7,8 +7,9 @@ block content
     div.sub-header
       h2 New Article
     div.form-container
+    include ../includes/errors.jade
       form(action='/articles' method='post')
         include ../includes/form.jade
         div
           input(type="submit" value='Add Article')
-    include ../includes/errors.jade
+    
