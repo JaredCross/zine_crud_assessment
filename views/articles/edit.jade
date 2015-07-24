@@ -7,7 +7,7 @@ block content
     div.sub-header
       h2 Edit Article
     div.form-container
-    include ../includes/errors.jade
+      include ../includes/errors.jade
       form(action='/articles/' + article._id method='post')
         include ../includes/form.jade
         div
